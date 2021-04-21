@@ -2,13 +2,7 @@
     min-height: 473px;
     background-color:#f6f6f6;
     padding: 73px 0 67px 0;
-    &__header{
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
-        color: #0d0d0d;
-        text-align: center;
-    }
+    
     &__wrapper{
         display: flex;
         margin-top: 60px;
@@ -16,9 +10,16 @@
     }
     &__icons{
         width: 275px;
+        &:nth-child(2) img{
+            animation: heartbeat 1.5s ease infinite;
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
         img{
             display: block;
             margin: 0 auto;
+
         }
         h3{
             font-weight: 700;
@@ -41,4 +42,32 @@
             }
         }
     }
+}
+
+@media (max-width:1200px){
+    .benefits{
+        &__icons{
+            width: 225px;
+        }
+    }
+}
+@media (max-width:991px){
+    .benefits{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        &__icons{
+            width: 275px;
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width:575px){
+    .benefits{
+		padding: 30px 0 30px 0;
+		
+	}
+    
 }

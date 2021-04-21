@@ -1,0 +1,42 @@
+.review{
+    padding-bottom: 60px;
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        img{
+            display: block;
+            margin-right: 61px;
+        }
+    }
+    &__client{
+        font-weight: 700;
+        font-size: 18px;
+        color: #0D0D0D;
+        span{
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            color: #646464;
+        }
+    }
+    &__text{
+        font-weight: 300;
+        font-size: 16px;
+        color: #0D0D0D;
+        margin-top: 10px;
+    }
+}
+@media (max-width:767px){
+   .review{
+        &__item{
+            flex-direction: column;
+            img{
+                margin: 0 auto;
+            }
+        }
+        &__client{
+            margin-top: 20px;
+        }
+   }
+}

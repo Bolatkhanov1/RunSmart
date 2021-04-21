@@ -1,14 +1,44 @@
-@import 'base/variables';
 *{
     font-family: 'Museo Sans Cyrls', sans-serif;
 }
-.container{
-    max-width: 950px;
-    margin: 0 auto;
-}
 
+@import 'base/variables';
+@import 'base/animations';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/benefits';
-@import 'base/media';
+@import 'blocks/titles';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/review';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';
+.container{
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+@media (max-width:1200px){
+    .container{
+        max-width: 800px;
+    }
+}
+@media (max-width:991px){
+    .container{
+        max-width: 630px;
+    }
+}
+@media (max-width:767px){
+    .container{
+		max-width: 450px;
+	}
+}
+@media (max-width:575px){
+	.container{
+		max-width: 280px;
+	}
+}
